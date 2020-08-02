@@ -16,6 +16,6 @@ module.exports = {
     "vue/no-parsing-error": [2, { "x-invalid-end-tag": false }],
     quotes: [2, "double"],
     semi: [2, "always"],
-    'space-before-function-paren': 0
+    "space-before-function-paren": 0
   }
 };

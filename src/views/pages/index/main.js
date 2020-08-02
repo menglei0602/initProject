@@ -13,14 +13,14 @@ window.axios = axios;
 window.qs = qs;
 Vue.config.productionTip = false;
 Vue.prototype.echarts = echarts;
-Vue.directive('focus', {
+Vue.directive("focus", {
   // 当被绑定的元素插入到 DOM 中时……
   inserted: function (el, binding, vnode, oldVnode) {
     console.log(el, binding, vnode, oldVnode);
     // 聚焦元素
     el.focus();
   }
-})
+});
 new Vue({
   router,
   store,
