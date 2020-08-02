@@ -92,9 +92,11 @@ module.exports = {
   //     };
   //   }
   // },
-  // chainWebpack: config => {
-  //   config.output.filename("[name].[hash].js").end();
-  // },
+  chainWebpack: config => {
+    // config.output.filename("[name].[hash].js").end();
+    console.log(config);
+    config.plugins.delete("prefetch-index").delete("preload-index");
+  },
   // 它支持webPack-dev-server的所有选项
   devServer: {
     host: "",
